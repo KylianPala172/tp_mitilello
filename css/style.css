@@ -1,0 +1,121 @@
+/* import pris via la source: https://fonts.google.com/specimen/Zhi+Mang+Xing?query=Zhi+Mang+Xing&sidebar.open=true&selection.family=Zhi+Mang+Xing */
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+/* import pris via la source: https://fonts.google.com/specimen/Open+Sans?query=Open+Sans&selection.family=Open+Sans:ital,wght@0,300;1,800|Zhi+Mang+Xing */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,800&family=Zhi+Mang+Xing&display=swap');
+
+header h1{ /* Prend en charge en compte le gros titre de la page */
+    line-height: 90px; 
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Zhi Mang Xing', cursive; /* fait appel à la police d'écriture "Zhi Mang Xing" importé au début, via le code fourni sur la page google font. */
+}
+
+h2, section h2{ /* Prend en charge les titres "Sommaire, Histoire, L'âge d'argent, et Années 1970 */
+    background: #3498db; /* Modifie la couleur de fond */
+    color: #ecf0f1; /* Modifie la couleur de la police d'écriture */
+    line-height: 50px; /* Modifie la taille du fond (background) */
+    position: center; /* Permet de centrer */
+    font-size: 40px; /* Modifie la taille de la police d'écriture (ne prend pas en compte du fond) */
+    top: 0;
+    font-family: 'Zhi Mang Xing', cursive; /* fait appel à la police d'écriture "Zhi Mang Xing" importé au début, via le code fourni sur la page google font. */
+    box-shadow: 0 2px 3px #2c3e50;
+}
+
+h2,section h2::after{
+    color: #ecf0f1;
+    content: '\276D'; /* Icone flèche */
+    padding-left: 5px; /* Met 5 pixels d'écart entre le texte et l'icone */
+}
+
+h2.bookmark:target{ /* permet de faire en sorte que le titre soit mis en couleur rouge quand on y accède via le lien dédié dans le sommaire */
+    background:#e74c3c;
+    color: #ecf0f1;
+}
+
+body{ /* Sans aucun doute le plus important de la page pour la présentation, permet de centrer en délimitant les côtés */
+    background-color: #ecf0f1; /* Couleur de fond sur blanc */
+    max-width: 900px; /* détermine la largeur de la page tout en adaptant le contenu à l'intérieur */
+    padding: 15px; /* détermine la largeur sans prendre en compte le contenu à l'intérieur */
+    margin: auto; /* adapte automatiquement la marge */
+    box-shadow: 0 5px 20px #2c3e50; /* Création de l'ombre de la page avec ses paramètres */
+    /* 20px détermine la distance de l'ombre portée de l'ombre externe */
+}
+
+html{
+    background-image: url(../asset/FondSemiTransparant.png);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html{
+    scroll-behavior: smooth; /* permet de lisser la barre de scroll, la rendant plus discrète */
+}
+
+ol li{ /* les liens Histoire,Age d'argent et Années 1970 du sommaire */
+    line-height: 2rem; /*ajuste le distance entre les lignes pour le sommaire */
+}
+
+main, header, nav, footer{
+    padding-bottom: 5px
+}
+
+html,body{
+    font: 20px 'open Sans', sans-serif; /* ajuste la taille de la police ainsi que la police d'écriture des titres situés dans le body */
+    margin: 0 auto; /* permet d'assurer qu'il n'y ai pas de marge, ainsi tout est collé à gauche de la page web */
+}
+
+h1, h2,p,ol{
+    margin: 0;
+    font-weight: 450; /* Modifie le gras des paragraphes de h1,h2 ainsi que les liens du sommaire */
+}
+
+nav h2, section h2{ /* Très important: Permet de garder à l'écran la partie que l'on consulte, par exemple Histoire: La barre bleu avec écrit "Histoire" va rester en haut de la page même si on scroll vers le bas, jusqu'à atteindre une nouvelle partie */
+    color: #ecf0f1;
+    background: #3498db;
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+    padding-left: 5px;
+    line-height: 45px;
+}
+
+nav ol{ /* Permet de modifier la distance de marge du sommaire (Histoire, Âge d'arrgent, ainsi que Années 1970) */
+    margin: 10px 0;
+}
+
+section p{ /* Prend en charge tous les paragraphes des sections */
+    text-align: center;
+    padding: 5px;
+    line-height: 1.5rem;
+    font-family: 'Open Sans', sans-serif; /* fait appel à la police d'écriture Open Sans importé au début, via le code fourni sur la page google font. */
+}
+
+section p img{ /* Prend en charge toutes les images des paragraphes se situant dans les sections */
+    width: 100%; /* Cela permet de faire en sorte que l'image remplisse 100% de sa place */
+    display: block; /* étroittement lié au width, cela permet de mettre l'image sous forme de bloque) */
+}
+
+footer{ /* Prend en charge le footer, c'est à dire dans notre cas: index */
+    outline: 0; /* met le contour sur 0 */
+    text-align: center
+}
+
+ol li{
+    line-height: 1.4rem;
+}
+
+/* ----icones----- */
+
+h1::before{ /* avant le "Comics DC: les justiciers. L'étoile rouge */
+    color: #e74c3c;
+    content: '\2605';
+}
+
+footer::before{ /* Ajout d'icones "avant" Index. */
+    content: '\276c' '\0002F' '\276D';
+}
+
+
+
